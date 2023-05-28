@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <section class="topHeader">
+        <section class="header">
+          <div class="navigation">
+            <div class="leftimg">
+              <img src="./Images/WavesCo.png" />
+            </div>
+            <nav class="navlist">
+              <ul>
+                <li>Home</li>
+                <li>Best for Youtube</li>
+                <li>Category</li>
+                <li>Upgrade</li>
+                <li>FAQ</li>
+                <li><button>Login</button></li>
+
+                <!-- <li style="opacity: 1"><a href="#">Login</a></li> -->
+              </ul>
+            </nav>
+            <ul class="hamburgar">
+              <li onclick="openMenu()"><img src="./Images/Group 6.svg" /></li>
+            </ul>
+          </div>
+        </section>
+        <section
+          class="mobileMenu hide"
+          id="mobileMenu"
+          style="z-index: 1000 !important"
+        >
+          <ul>
+            <li>Home</li>
+            <li>Best for Youtube</li>
+            <li>Category</li>
+            <li>Upgrade</li>
+            <li>FAQ</li>
+            <li><button>Login</button></li>
+          </ul>
+        </section>
+
+        <section class="main">
+          <div class="center-main">
+            <div class="first">
+              <h3>Free download sound effects without copyright</h3>
+              <p>
+                Download free copyright sound effect for your YouTube video and
+                any use.
+              </p>
+            </div>
+            <div class="second">
+              <img src="./Images/search-icon.svg" />
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search sound effects"
+              />
+              <p>
+                Try keyword: happy, funny, natural, horror, jumpscare and more
+              </p>
+            </div>
+            <div class="third">
+              <p>
+                650.654 Available Sounds. Library Updated Weekly. See popular
+                sounds
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section style="width: 100%; background: #fafafa">
+      <section class="topCompany">
+        <section class="company">
+          <div class="title">
+            <h6>Trusted by top Youtuber and Production House</h6>
+          </div>
+          <div class="logo">
+            <img src="./Images/dudeperfect 1.png" />
+            <img src="./Images/Pewdiepie-logo 1.png" />
+            <img src="./Images/MrBeast 1.png" />
+            <img src="./Images/wb-removebg-preview 1.png" />
+            <img src="./Images/netflix 1.png" />
+            <img src="./Images/pixar-removebg-preview 1.png" />
+            <img src="./Images/channels4_profile 1.png" />
+          </div>
+        </section>
+      </section>
+    </section>
+    <section style="width: 100%; background: #0432df; display: none">
+      <section class="topdownload">
+        <section class="download">
+          <div style="text-align: center" class="first">
+            <h3>Download sound effects for your project</h3>
+            <p style="width: auto">Find the right plan for you</p>
+          </div>
+          <div class="second">
+            <div class="basic">
+              <div class="child1">
+                <h4>Basic</h4>
+                <p>Download any royalty-free sound effects</p>
+              </div>
+              <div class="child2">
+                <p>Free</p>
+                <div><button class="btn">Get started</button></div>
+              </div>
+            </div>
+            <div class="basic">
+              <div class="child1">
+                <h4>Premium</h4>
+                <p>
+                  Download premium sound effects and use them for any business
+                  purpose
+                </p>
+              </div>
+              <div class="child2 premium">
+                <p class="pt-25">Start from $12/month</p>
+                <div><button class="btn">Get started</button></div>
+              </div>
+            </div>
+          </div>
+          <p class="text">Join premium with 434,849 creators.</p>
+        </section>
+      </section>
+    </section>
+    <section style="width: 100%; background-color: #020d37">
+      <section class="topfooter">
+        <section class="footer">
+          <div class="parent1">
+            <div class="child1">
+              <img src="./Images/WavesCo.png" />
+            </div>
+            <div class="child2">
+              <p>
+                WavesCo is a platform for providing premium sound effects for
+                Youtube videos, movies and many more.
+              </p>
+            </div>
+            <div class="child3">
+              <p>WavesCo ©2021, All rights reserved</p>
+            </div>
+          </div>
+          <div class="parent2">
+            <ul class="list1">
+              <li>Product</li>
+              <li>Browse sounds</li>
+              <li>Pricing</li>
+              <li>FAQ</li>
+              <li>Affiliate</li>
+            </ul>
+            <ul class="list2">
+              <li>Company</li>
+              <li>Blog</li>
+              <li>About us</li>
+              <li>Help</li>
+              <li>Career</li>
+            </ul>
+            <ul class="list3">
+              <li>Social Media</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <script>
+      const mobileMenu = document.getElementById("mobileMenu");
+      const openMenu = () => {
+        if (mobileMenu.classList.contains("hide"))
+          mobileMenu.classList.remove("hide");
+        else mobileMenu.classList.add("hide");
+      };
+    </script>
+  </body>
+</html>
