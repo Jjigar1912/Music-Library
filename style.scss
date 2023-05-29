@@ -653,6 +653,266 @@ ul
         }
     }
 }
+/* Category Section */
+.topCategory
+{
+    max-width: 1244px;
+    width : 100%;
+    margin : auto ;
+    padding: 60px 101px;
+
+    .category{
+        max-width : 1044px ; 
+        margin : auto ;
+        width : 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap : 23px ;
+        a{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #0432DF;
+        }
+        h4{
+            width: fit-content;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 45px;
+        }
+        .gallery
+        {
+            display: flex;
+            justify-content: space-around;
+            gap : 20px ; 
+            flex-wrap: wrap;
+            .first
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/musical.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .second
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/industrial.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .third
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/movie.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .four
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/animal.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .five
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/people\'.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .six
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/vehicles.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .seven
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/sounddesign.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .eight
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/emergency.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .nine
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/bell.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .ten
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/nature.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .eleven
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/cartoon.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+            .twelve
+            {
+                width : 157px ;
+                height : 117px ;
+                background-image: url("./Images/horror.svg");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                p{
+                    color : white ; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 172%;
+                }
+            }
+
+
+        }
+      
+    }
+}
 /* Footer Section */
 
 .topfooter
@@ -1056,6 +1316,83 @@ ul
         font-size: 14px !important;
         line-height: 138% !important;
         width: fit-content;
+    }
+    .topCategory
+    {
+        padding: 40px 51px !important;
+        .category
+        {        
+            gap: 10px;
+        }
+    }
+    .gallery
+    {
+        gap : 12px !important; 
+        justify-content: space-around !important;
+        flex-wrap: wrap !important;
+        .first
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .second
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .third
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .four
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .five
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .six
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .seven
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .eight
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .nine
+        {
+            width : 150px ;
+            height : 90px ;
+         
+        }
+        .ten
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .eleven
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+        .twelve
+        {
+            width : 150px ;
+            height : 90px ;
+        }
+
+
     }
 }
 @media screen and (max-width : 660px) {
@@ -1464,6 +1801,122 @@ ul
 }
 @media screen and (max-width : 420px) {
   
+    .topCategory
+    {
+        padding: 30px 16px 40px !important;
+       .category
+        {        
+            gap: 20px !important;
+            h4{
+                font-size: 20px !important;
+            }
+       
+        }
+    }
+    .gallery
+    {
+        gap : 10px !important; 
+        justify-content: space-around !important;
+        flex-wrap: wrap;
+        .first
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .second
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .third
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .four
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .five
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .six
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .seven
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .eight
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .nine
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .ten
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .eleven
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+        .twelve
+        {
+            width : 139px !important;
+            height : 70px !important;
+            p{
+                font-size: 16px !important;
+            }
+        }
+
+
+    }
 
     .display-none
     {

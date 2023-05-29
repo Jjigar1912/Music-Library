@@ -602,6 +602,250 @@ body::-webkit-scrollbar {
   padding: 14px 24px !important;
 }
 
+/* Category Section */
+.topCategory {
+  max-width: 1244px;
+  width: 100%;
+  margin: auto;
+  padding: 60px 101px;
+}
+.topCategory .category {
+  max-width: 1044px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+}
+.topCategory .category a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0432DF;
+}
+.topCategory .category h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 45px;
+}
+.topCategory .category .gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.topCategory .category .gallery .first {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/musical.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .first p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .second {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/industrial.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .second p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .third {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/movie.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .third p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .four {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/animal.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .four p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .five {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/people'.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .five p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .six {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/vehicles.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .six p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .seven {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/sounddesign.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .seven p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .eight {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/emergency.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .eight p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .nine {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/bell.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .nine p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .ten {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/nature.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .ten p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .eleven {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/cartoon.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .eleven p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+.topCategory .category .gallery .twelve {
+  width: 157px;
+  height: 117px;
+  background-image: url("./Images/horror.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.topCategory .category .gallery .twelve p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+}
+
 /* Footer Section */
 .topfooter {
   max-width: 1244px;
@@ -905,6 +1149,65 @@ body::-webkit-scrollbar {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .topCategory {
+    padding: 40px 51px !important;
+  }
+  .topCategory .category {
+    gap: 10px;
+  }
+  .gallery {
+    gap: 12px !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+  }
+  .gallery .first {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .second {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .third {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .four {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .five {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .six {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .seven {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .eight {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .nine {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .ten {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .eleven {
+    width: 150px;
+    height: 90px;
+  }
+  .gallery .twelve {
+    width: 150px;
+    height: 90px;
+  }
 }
 @media screen and (max-width: 660px) {
   .topCompany .company .logo {
@@ -1159,6 +1462,104 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 420px) {
+  .topCategory {
+    padding: 30px 16px 40px !important;
+  }
+  .topCategory .category {
+    gap: 20px !important;
+  }
+  .topCategory .category h4 {
+    font-size: 20px !important;
+  }
+  .gallery {
+    gap: 10px !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+  }
+  .gallery .first {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .first p {
+    font-size: 16px !important;
+  }
+  .gallery .second {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .second p {
+    font-size: 16px !important;
+  }
+  .gallery .third {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .third p {
+    font-size: 16px !important;
+  }
+  .gallery .four {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .four p {
+    font-size: 16px !important;
+  }
+  .gallery .five {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .five p {
+    font-size: 16px !important;
+  }
+  .gallery .six {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .six p {
+    font-size: 16px !important;
+  }
+  .gallery .seven {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .seven p {
+    font-size: 16px !important;
+  }
+  .gallery .eight {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .eight p {
+    font-size: 16px !important;
+  }
+  .gallery .nine {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .nine p {
+    font-size: 16px !important;
+  }
+  .gallery .ten {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .ten p {
+    font-size: 16px !important;
+  }
+  .gallery .eleven {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .eleven p {
+    font-size: 16px !important;
+  }
+  .gallery .twelve {
+    width: 139px !important;
+    height: 70px !important;
+  }
+  .gallery .twelve p {
+    font-size: 16px !important;
+  }
   .display-none {
     display: none;
   }
