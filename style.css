@@ -433,8 +433,17 @@ body::-webkit-scrollbar {
   background: #EEEEEE;
   border-radius: 8px;
   max-width: 600px;
-  padding: 16px 20px 15px 20px;
+  padding: 10px 20px 10px 27px;
   width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: start;
+  color: #4C526A;
 }
 .main .center-main .second ::-moz-placeholder {
   padding-left: 13px;
@@ -1161,6 +1170,9 @@ body::-webkit-scrollbar {
   }
   .topdownload .download .second .basic .child2 div {
     padding-top: 20px !important;
+  }
+  .topdownload .download .second .basic .child2 button {
+    font-size: 14px !important;
   }
   .main .center-main .first {
     display: flex;
