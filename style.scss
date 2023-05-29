@@ -190,11 +190,212 @@ ul
     }
 }
 }
+/* Music Section */
+.topmusic
+{
+    max-width : 1244px ;
+    width : 100% ;
+    margin : auto ;
+    padding: 80px 100px 60px;
+    .music{
+        max-width : 1044px ;
+        margin: auto;
+        width : 100%;
+        display : flex;
+        flex-direction: column;
+        gap : 20px ;
+        .soundEffect
+        {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #0432DF !important;
+        }
+        .music-list
+        {
+            display: flex;
+            flex-direction: column;
+            gap : 20px ;
+         
+            .music-table
+            {
+                display: flex;
+                flex-direction: column;
+                .song
+                {
+                    padding: 12px 0px 0px;
+                    position: relative;
+                    min-height : 68px;
+                    &::after
+                    {
+                        content: '';
+                        max-width: 1044px;
+                        width : 100%;
+                        height: 1px;
+                        background: #EEEEEE;
+                        position: absolute;
+                        top : 67px;
+                    }
+                }
+                .music-name
+                {
+                    display: flex;
+                    align-items: center;
+                    gap : 47px;
+                    padding: 0px 0px 0px 20px;
+                    .soundName
+                    {
+                        max-width : 189px ;
+                        width : 100%;
+                        p:first-child
+                        {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 138%;
+                            color: #020D37;
+                        }
+                        p:nth-child(2)
+                        {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 172%;
+                            letter-spacing: -0.05em;
+                            font-feature-settings: 'salt' on, 'liga' off;
+                            color: #4C526A;
+                        }
+                    }
+                    .description
+                    {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 138%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.05em;
+                        font-feature-settings: 'salt' on, 'liga' off;
+                        color: #4C526A;
+                        max-width : 251px ;
+                        width : 100%;
+                    }
+                    .jumpscare
+                    {
+                        max-width: 212px;
+                        width : 100%;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 138%;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.05em;
+                        color: #4C526A;
+                    }
+                    .icon{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 20px;
+                        max-width : 148px ;
+                        width : 100%;
+                    }
+                }
+            }
+        }
+    
+        .music-title
+        {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 45px;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt' on, 'liga' off;
+            color: #020D37;
+            h4{
+                width : fit-content;
+            }
+
+        }
+        .music-menu
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                list-style-type: none;
+                display: flex;
+                padding: 10px;
+                gap: 28px;
+                li{
+                    position: relative;
+                    a{
+                    text-decoration: none;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 138%;
+                    color: #4C526A;
+                }
+                &:first-child a{
+                    color: #020D37;
+                }
+
+                &:first-child::after
+                {
+                    content: '';
+                    position: absolute;
+                    width : 19px;
+                    height : 2px ; 
+                    background: #020D37;
+                    border-radius: 1px;
+                    top : 100%;
+                    left : 0%;
+                }
+              
+            }
+            }
+            .filter
+            {
+                padding: 2px 14px 2px 20px;               
+                background: #F1F1F1;
+                border-radius: 4px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 138%;
+                display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 20px;
+                  max-width: 126px;
+                  width : 100%;
+                  height: 40px;
+                  border: none;
+            }
+        }
+    }
+}
 /* Company Section */
 .topCompany
 {
     max-width : 1244px;
     margin: auto;
+    background: #FAFAFA;
     .company
     {
         max-width: 1044px;
@@ -204,6 +405,7 @@ ul
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: #FAFAFA;
         gap: 35px;
         .title
         {
@@ -540,6 +742,71 @@ ul
         }
     }
 }
+@media screen and (max-width : 1097px)
+{
+    .topmusic
+    {          
+            padding: 80px 50px 60px !important;
+    }
+}
+@media screen and (max-width : 1000px) {
+    .topmusic
+    {
+        padding : 80px 20px 60px !important;
+    }
+}
+@media screen and (max-width : 936px) {
+    .topmusic
+    {
+        padding : 80px 10px 60px !important;
+    }
+}
+@media screen and ( max-width : 920px) {
+        .topmusic
+        {
+            .music{ 
+                    .music-list
+                    {   
+                        .music-table
+                        {
+                            .music-name
+                            {
+                                gap : 30px;
+                            }
+                        }
+                    }
+                }
+        }
+        .soundName p:first-child
+        {
+            font-size: 14px !important;
+        }
+        .description
+        {
+            font-size: 14px !important;
+        }
+        .jumpscare
+        {
+            font-size: 14px !important;
+        }
+}
+@media screen and (max-width : 848px) {
+    .topmusic
+    {
+        .music{ 
+                .music-list
+                {   
+                    .music-table
+                    {
+                        .music-name
+                        {
+                            gap : 20px;
+                        }
+                    }
+                }
+            }
+    }
+}
 @media screen and (max-width : 590px) {
     .main
     {
@@ -554,7 +821,7 @@ ul
         }
     }
 }
-@media screen and (max-width : 768px) {
+@media screen and ( max-width : 768px) {
  
     .main
     {
@@ -707,6 +974,89 @@ ul
             }
         }
     }
+    .display-none
+    {
+        display: none !important;
+    }
+    .topmusic
+    {
+        padding: 50px 60px !important;
+        .music
+        {
+            gap : 14px !important ; 
+            .music-title
+            {
+                h4{
+                    font-size: 24px !important;
+                }
+            }
+            .music-list
+            {
+                .music-table
+                {
+                    padding: 6px 0px 0px;
+                }
+                .music-menu
+                {
+                    ul{
+                        padding: 10px !important;
+                        gap: 28px !important;
+                        li{
+                            a{
+                                font-size : 14px !important;
+                            }
+                        }
+                    }
+                    .filter
+                    {
+                        max-width : 101px !important;
+                        width : 100%;
+                        height : 40px !important;
+                        span{
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .music-name
+    {
+        gap : 52px !important;
+    }
+    .soundName
+    {
+        max-width : 129px !important;
+        width : 100%;
+        p:first-child
+        {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 138%;
+            color: #020D37;
+        }
+    }
+    .jumpscare p {
+        max-width: 162px;
+        width : 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 138%;
+    }
+    .soundEffect
+    {
+        font-family: 'Inter' !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        font-size: 14px !important;
+        line-height: 138% !important;
+        width: fit-content;
+    }
 }
 @media screen and (max-width : 660px) {
     .topCompany
@@ -718,6 +1068,43 @@ ul
             }
         }
     }
+}
+@media screen and (max-width : 730px) {
+    .music-name
+    {
+        gap : 30px !important;
+    }
+}
+@media screen and (max-width : 661px) {
+  .topmusic
+  {
+    padding : 50px 30px !important;
+  }
+}
+@media screen and (max-width : 630px) {
+    .topmusic .music .music-list .music-menu ul
+    {
+        gap : 18px !important;
+    }
+}
+@media screen and (max-width : 601px) {
+    .topmusic
+    {
+        padding : 50px 15px !important;
+    }
+    .topmusic .music .music-list .music-menu ul
+    {
+        gap : 14px !important;
+    }
+    .music-name {
+        gap : 15px !important;
+    }
+}
+@media screen and (max-width : 526px) {
+   .display-none
+   {
+    display: none !important;
+   }
 }
 @media screen and (max-width : 670px) {
     .topfooter{
@@ -1069,7 +1456,62 @@ ul
     }
     
 }
+@media screen and (max-width : 442px) {
+    .music-name
+    {
+        gap : 7px !important;
+    }
+}
 @media screen and (max-width : 420px) {
+  
+
+    .display-none
+    {
+        display: none;
+    }
+    .song{
+        padding: 8px 0px 0px !important;
+    }
+    .icon img:first-child
+    {
+        display: none !important;
+    }
+    .jumpscare
+    {
+        display: none !important;
+    }
+    .topmusic .music .music-list .music-menu .filter
+    {
+        max-width : 36px !important; 
+        width : 100% !important;
+        padding: 0px 20px !important;
+        span{
+            display: none !important;
+        }
+    }
+    .music-menu ul li:nth-child(3)
+    {
+        display: none;
+    }
+.topmusic
+{
+    padding: 50px 16px !important;
+    .music
+    {
+        .music-title
+        {
+            h4{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                max-width : 286px !important;
+                width : 100%;
+            }
+        }
+    }
+}
  .topfooter
  {
     padding : 50px 16px;
@@ -1110,6 +1552,14 @@ ul
  .list2
  {
     width : 50% !important;
+ }
+ .music-name
+ {
+    gap : 19px !important;
+ }
+ .icon
+ {
+    padding: 0px !important;
  }
  .topCompany
  {
