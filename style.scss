@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @mixin setPoppins($weight,$size,$height)
 {
     font-family: 'Poppins';
@@ -913,6 +914,92 @@ ul
       
     }
 }
+
+/* Why Choose Us */
+.choose
+{
+    max-width: 1244px ;
+    width : 100%;
+    margin : auto ;
+    padding: 60px 100px 100px;
+    .chooseus
+    {
+        max-width : 1044px ;
+        width : 100%;
+        margin : auto ;
+        .parent{
+            display: flex;
+            flex-direction: row;
+            gap : 110px;
+            .child1
+            {
+                max-width : 337px ;
+                width : 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 17px;
+                p{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #F59E00;
+                }
+                h6{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 45px;
+                    letter-spacing: -0.02em;
+                }
+            }
+            .child2
+            {
+                display: flex;
+                column-gap: 100px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .card
+                {
+                    max-width : 246px ;
+                    width : 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap : 20px ;
+                    .card-footer
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        gap : 4px ;
+                        .card-title
+                        {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 172%;
+                            letter-spacing: -0.05em;
+                        }
+                        .card-description
+                        {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 172%;
+                            color: #4C526A;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /* Footer Section */
 
 .topfooter
@@ -997,6 +1084,59 @@ ul
                     font-size: 16px;
                     line-height: 180%;
                     color: #ACAFB8;
+                }
+            }
+        }
+    }
+}
+@media screen and ((min-width : 1030px) and (max-width : 1239px)) {
+    .choose
+    {
+        padding: 60px 20px 100px !important;
+        .chooseus
+        {
+            .parent
+            {
+                .child2
+                {
+                    gap : 50px !important; 
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 1029px) {
+    .choose
+    {
+        padding: 40px 0px 60px !important;
+        .chooseus
+        {
+            .parent
+            {
+                flex-direction: column;
+                gap : 41px !important;
+                .child1
+                {
+                    justify-content: center;
+                    align-items: center;
+                    gap : 17px !important;
+                    width : 100% !important;
+                    max-width: 100% !important;
+                    h6{
+                        text-align: center;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 160%;
+                        max-width: 466px;
+                        width : 100%;
+                
+                    }
+                }
+                .child2
+                {
+                    column-gap: 110px !important;
                 }
             }
         }
@@ -1800,7 +1940,48 @@ ul
     }
 }
 @media screen and (max-width : 420px) {
-  
+    .choose
+    {
+        .chooseus
+        {
+            .parent
+            {
+                .child1{
+                    h6{
+                        max-width: 265px;
+                        width : 100%;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                    }
+                }
+                .child2
+                {
+                    gap : 30px !important;
+                    .card{
+                        .card-footer
+                        {
+                            .card-title{
+                                font-size: 16px !important;
+                            }
+                            .card-description
+                            {
+                                max-width: 246px !important;
+                                width : 100% !important;
+                            }
+                        }
+                    }
+                }
+                .gap{
+                    gap : 30px !important;
+                }
+            }
+        }
+    }
     .topCategory
     {
         padding: 30px 16px 40px !important;
