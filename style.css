@@ -40,9 +40,9 @@ body::-webkit-scrollbar {
   margin: auto;
 }
 .container .topHeader .header .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -50,16 +50,16 @@ body::-webkit-scrollbar {
   padding: 10px 10px 10px 0px;
 }
 .container .topHeader .header .navigation .navlist ul {
-  display: flex;
-  gap: 43px;
-  list-style-type: none;
+  display: flex !important;
+  gap: 43px !important;
+  list-style-type: none !important;
 }
 .container .topHeader .header .navigation .navlist ul li {
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
   opacity: 0.6;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -559,20 +559,17 @@ body::-webkit-scrollbar {
   font-weight: 500;
   font-size: 18px;
   line-height: 172%;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 256px;
+  width: 100%;
+  width: 256px;
+  min-height: 93px;
   color: #EEEEEE !important;
-}
-.topdownload .download .second .basic .premium {
-  padding-top: 25px !important;
 }
 .topdownload .download .second .basic .premium button {
   padding-top: 17px !important;
   border-radius: 8px !important;
 }
 .topdownload .download .second .basic .child2 {
-  padding-top: 56px;
+  padding-top: 25px;
 }
 .topdownload .download .second .basic .child2 p {
   font-family: "Inter";
@@ -1025,6 +1022,9 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 1029px) {
+  .gap {
+    gap: 30px !important;
+  }
   .choose {
     padding: 40px 0px 60px !important;
   }
@@ -1050,8 +1050,18 @@ body::-webkit-scrollbar {
     width: 100%;
   }
   .choose .chooseus .parent .child2 {
+    justify-content: space-evenly !important;
     -moz-column-gap: 110px !important;
          column-gap: 110px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .choose .chooseus .parent .child2 {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .choose .chooseus .parent .child2:nth-child(2) .card:nth-child(1) {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 1097px) {
@@ -1094,6 +1104,64 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 768px) {
+  .topdownload {
+    padding: 60px 0px !important;
+  }
+  .topdownload .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .topdownload .download .first h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+  }
+  .topdownload .download .first p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 189%;
+    letter-spacing: -0.05em;
+  }
+  .topdownload .download .second .basic .child1 h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+  }
+  .topdownload .download .second .basic .child1 p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138%;
+    max-width: 219px;
+    width: 100%;
+    min-height: 66px !important;
+  }
+  .topdownload .download .second .basic .child2 {
+    padding-top: 24px !important;
+  }
+  .topdownload .download .second .basic .child2 p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 172%;
+    letter-spacing: -0.05em;
+  }
+  .topdownload .download .second .basic .child2 div {
+    padding-top: 20px !important;
+  }
   .main .center-main .first {
     display: flex;
     flex-direction: column;
@@ -1110,59 +1178,6 @@ body::-webkit-scrollbar {
   }
   .topfooter .footer .parent1 {
     gap: 20px !important;
-  }
-  .topdownload {
-    padding: 60px 84px;
-  }
-  .topdownload .download .first h3 {
-    font-size: 28px;
-    font-weight: 600 !important;
-    letter-spacing: -2% !important;
-  }
-  .topdownload .download .first p {
-    padding-top: 12px;
-  }
-  .topdownload .download .second .basic {
-    padding: 34px 29px !important;
-  }
-  .topdownload .download .second .basic .child1 p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 138%;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .topdownload .download .second .basic .premium {
-    padding-top: 25px !important;
-  }
-  .topdownload .download .second .basic .premium button {
-    border-radius: 8px !important;
-  }
-  .topdownload .download .second .basic .child2 p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 172%;
-    letter-spacing: -0.05em;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .topdownload .download .second .basic .child2 div {
-    padding-top: 17px;
-  }
-  .topdownload .download .second .basic .child2 button {
-    padding: 10px 20px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.01em;
-    font-feature-settings: "salt" on, "liga" off;
   }
   .topCompany .company {
     padding: 40px 100px;
@@ -1345,6 +1360,9 @@ body::-webkit-scrollbar {
   .topmusic .music .music-list .music-menu ul {
     gap: 18px !important;
   }
+  .topdownload .download .second {
+    flex-direction: column !important;
+  }
 }
 @media screen and (max-width: 601px) {
   .topmusic {
@@ -1490,12 +1508,17 @@ body::-webkit-scrollbar {
     margin: auto;
     width: 100%;
   }
+  .header .navigation {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 5px !important;
+  }
   .header .navigation .navlist {
-    display: none;
+    display: none !important;
   }
   .header .navigation .hamburgar {
-    list-style-type: none;
-    display: block;
+    list-style-type: none !important;
+    display: block !important;
   }
   .topCompany .company .logo {
     gap: 40px;
@@ -1514,11 +1537,6 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 820px) {
   .topCompany .company .logo {
     gap: 40px;
-  }
-}
-@media screen and (max-width: 827px) {
-  .topdownload .download .second .basic {
-    padding: 10px 15px;
   }
 }
 @media screen and (max-width: 1137px) {
@@ -1788,5 +1806,72 @@ body::-webkit-scrollbar {
   }
   .topCompany .company .logo {
     gap: 30px !important;
+  }
+  .topdownload {
+    padding: 50px 16px !important;
+  }
+  .topdownload .download .first h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+  }
+  .topdownload .download .first p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .topdownload .download .second .basic .child1 h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+  }
+  .topdownload .download .second .basic .child1 p {
+    max-width: 217px !important;
+    width: 100% !important;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138%;
+    letter-spacing: -0.05em;
+    min-height: 66px !important;
+  }
+  .topdownload .download .second .basic .child2 {
+    padding-top: 28px !important;
+  }
+  .topdownload .download .second .basic .child2 p {
+    font-family: "Inter" !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 172% !important;
+    letter-spacing: -0.05em !important;
+  }
+  .topdownload .download .second .basic .child2 div {
+    padding-top: 14px !important;
+  }
+  .topdownload .download .second .basic .child2 button {
+    padding: 10px 20px !important;
+    font-family: "Poppins";
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  .topdownload .download .text {
+    font-family: "Inter" !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 180% !important;
+    max-width: 288px !important;
   }
 }/*# sourceMappingURL=style.css.map */

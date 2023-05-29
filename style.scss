@@ -51,9 +51,9 @@ body::-webkit-scrollbar
     margin: auto;
     .navigation
     {   
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
         padding-top : 20px;
         padding-bottom: 20px;
         .leftimg
@@ -62,16 +62,16 @@ body::-webkit-scrollbar
         }
         .navlist ul
         {
-            display: flex;
-            gap : 43px;
+            display: flex !important;
+            gap : 43px !important;
           
-            list-style-type: none;
+            list-style-type: none !important;
             
             li{
                 margin: auto;
                 width : fit-content;
                 opacity: 0.6;
-                color: #FFFFFF;
+                color: #FFFFFF !important;
                 @include setPoppins(500,14px,24px);
                 &:first-child
                 {
@@ -603,22 +603,23 @@ ul
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 172%;
-                        width: fit-content;
-                        max-width : 256px;
+                        width: 100%;
+                        width : 256px;
+                        min-height : 93px;
                         color: #EEEEEE !important;
                     }
                 }
                 .premium
                 {
-                    padding-top: 25px !important ;
-                    button{
+                     button{
                         padding-top: 17px !important;
                         border-radius: 8px !important;
                     }
                 }
                 .child2
                 {
-                    padding-top: 56px;
+                    padding-top: 25px;
+                   
                     p{
                         font-family: 'Inter';
                         font-style: normal;
@@ -630,8 +631,7 @@ ul
                         color: #FFFFFF;
                     }
                     div{
-                        padding-top: 17px;
-                  
+                        padding-top: 17px;  
                     }
                     button{
 
@@ -1106,6 +1106,10 @@ ul
     }
 }
 @media screen and (max-width : 1029px) {
+    
+    .gap{
+        gap : 30px !important;
+    }
     .choose
     {
         padding: 40px 0px 60px !important;
@@ -1136,7 +1140,28 @@ ul
                 }
                 .child2
                 {
+                    justify-content: space-evenly !important;
                     column-gap: 110px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 700px) {
+    .choose
+    {
+        .chooseus
+        {
+            .parent
+            {
+                .child2
+                {
+                    flex-direction: column !important;
+                    align-items: center !important; 
+                    &:nth-child(2) .card:nth-child(1)
+                    {
+                        margin-top: 30px ;
+                    }
                 }
             }
         }
@@ -1221,8 +1246,83 @@ ul
         }
     }
 }
-@media screen and ( max-width : 768px) {
- 
+@media screen and ( max-width : 768px) 
+{
+    .topdownload
+    {
+       
+        padding: 60px 0px !important;
+        .download
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            .first
+            {
+                h3{
+
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 45px;
+                    letter-spacing: -0.02em;
+                }
+                p{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 189%;
+                    letter-spacing: -0.05em;
+                }
+            }
+            .second
+            {
+                .basic
+                {
+                    .child1
+                    {
+                        h4{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 160%;
+                            letter-spacing: -0.02em;
+                        }
+                        p{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 138%;
+                            max-width : 219px ;
+                            width : 100%;
+                            min-height: 66px !important;
+                        }
+                    }
+                    .child2
+                    {
+                        padding-top : 24px !important; 
+                        p{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 172%;
+                            letter-spacing: -0.05em;
+                        }
+                        div{
+                            padding-top : 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .main
     {
         .center-main
@@ -1250,79 +1350,7 @@ ul
             }
         }
     }
-    .topdownload
-    {
-        
-        padding: 60px 84px;
-        .download
-        {
-            .first
-            {
-                h3{
-                    font-size: 28px;
-                    font-weight: 600 !important;
-                    letter-spacing: -2% !important;
-                }
-                p{
-                    padding-top: 12px;
-                }
-            }
-            .second
-            {
-                .basic
-                {
-                    padding : 34px 29px !important;
-                    .child1
-                    {
-                        p{
-                            font-family: 'Inter';
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 138%;
-                            width: fit-content;
-                        }
-                    }
-                    .premium
-                    {
-                        padding-top: 25px !important ;
-                        button{
-                           border-radius: 8px !important;     
-                        }
-                    }
-                    .child2
-                    {
-                        p{
-                            font-family: 'Inter';
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 18px;
-                            line-height: 172%;
-                            letter-spacing: -0.05em;
-                            width: fit-content;
-                        }
-                        
-                    div{
-                        padding-top: 17px;
-                    }
-                        button{
-                            padding : 10px 20px;
-                            font-family: 'Poppins';
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 14px;
-                            line-height: 24px;
-                            text-align: center;
-                            letter-spacing: -0.01em;
-                            font-feature-settings: 'salt' on, 'liga' off;
-                            
-                        }
-
-                    }
-                }
-            }
-        }
-    }
+    
     .topCompany
     {
         .company
@@ -1563,6 +1591,17 @@ ul
     {
         gap : 18px !important;
     }
+    .topdownload
+    {
+        .download
+        {
+            .second
+            {
+                flex-direction: column !important;
+            }
+        }
+    }
+
 }
 @media screen and (max-width : 601px) {
     .topmusic
@@ -1794,14 +1833,17 @@ ul
         width : 100%;
         .navigation
         {
+            display: flex !important;
+            justify-content: space-between !important;
+            padding : 5px !important;
             .navlist
             {
-                display: none;
+                display: none !important;
             }
             .hamburgar
             {
-                list-style-type: none;
-                display: block;
+                list-style-type: none !important;
+                display: block !important;
             }
         }
     }
@@ -1847,21 +1889,7 @@ ul
     }
 }
 
-@media screen and (max-width : 827px) {
-    .topdownload
-    {
-        .download
-        {
-            .second
-            {
-                .basic
-                {
-                    padding : 10px 15px;
-                }
-            }
-        }
-    }    
-}
+
 @media screen and (max-width : 1137px) {
     .topfooter
     {
@@ -2098,7 +2126,6 @@ ul
 
 
     }
-
     .display-none
     {
         display: none;
@@ -2217,5 +2244,90 @@ ul
         }
     }
  }
+ .topdownload
+ {
+    padding: 50px 16px !important;
+    .download
+    {
+        .first
+        {
+            h3{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 160%;
+                letter-spacing: -0.02em;
+            }
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 180%;
+            }
+        }
+        .second
+        {
+            .basic
+            {
+                .child1
+                {
+                    h4{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: -0.02em;
+                    }
+                    p{
+                        max-width: 217px !important;
+                        width : 100% !important;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 138%;
+                        letter-spacing: -0.05em;
+                        min-height : 66px !important;
+                    }
+                }
+                .child2
+                {
+                    padding-top: 28px !important;
+                    p{
+                        font-family: 'Inter' !important;
+                        font-style: normal !important;
+                        font-weight: 600 !important;
+                        font-size: 18px !important;
+                        line-height: 172% !important;
+                        letter-spacing: -0.05em !important;
+                    }
+                    div{
+                        padding-top: 14px !important;
+                    }
+                    button{
+                        padding: 10px 20px !important;
+                        font-family: 'Poppins';
+                        font-style: normal !important; 
+                        font-weight: 600 !important;
+                        font-size: 14px !important;
+                        line-height: 24px !important;
+                    }
+                }
+            }
 
+        }
+        .text
+        {
+            font-family: 'Inter' !important;
+            font-style: normal !important;
+            font-weight: 500 !important; 
+            font-size: 16px !important;
+            line-height: 180% !important;
+            max-width: 288px !important;
+        }
+    }
+ }
 }
