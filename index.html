@@ -8,503 +8,510 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <section class="topHeader">
-        <section class="header">
-          <div class="navigation">
-            <div class="leftimg">
-              <img src="./Images/WavesCo.png" />
-            </div>
-            <nav class="navlist">
-              <ul>
-                <li>Home</li>
-                <li>Best for Youtube</li>
-                <li>Category</li>
-                <li>Upgrade</li>
-                <li>FAQ</li>
-                <li><button>Login</button></li>
+    <section class="preloader">
+      <div class="number">0</div>
+    </section>
+    <div class="hideDiv" id="bigContainer">
+      <section class="container">
+        <section class="topHeader">
+          <section class="header">
+            <div class="navigation">
+              <div class="leftimg">
+                <img src="./Images/WavesCo.png" />
+              </div>
+              <nav class="navlist">
+                <ul>
+                  <li>Home</li>
+                  <li>Best for Youtube</li>
+                  <li>Category</li>
+                  <li>Upgrade</li>
+                  <li>FAQ</li>
+                  <li><button>Login</button></li>
 
-                <!-- <li style="opacity: 1"><a href="#">Login</a></li> -->
+                  <!-- <li style="opacity: 1"><a href="#">Login</a></li> -->
+                </ul>
+              </nav>
+              <ul class="hamburgar">
+                <li onclick="openMenu()"><img src="./Images/Group 6.svg" /></li>
               </ul>
-            </nav>
-            <ul class="hamburgar">
-              <li onclick="openMenu()"><img src="./Images/Group 6.svg" /></li>
+            </div>
+          </section>
+          <section
+            class="mobileMenu hide"
+            id="mobileMenu"
+            style="z-index: 1000 !important"
+          >
+            <ul>
+              <li>Home</li>
+              <li>Best for Youtube</li>
+              <li>Category</li>
+              <li>Upgrade</li>
+              <li>FAQ</li>
+              <li><button>Login</button></li>
             </ul>
-          </div>
-        </section>
-        <section
-          class="mobileMenu hide"
-          id="mobileMenu"
-          style="z-index: 1000 !important"
-        >
-          <ul>
-            <li>Home</li>
-            <li>Best for Youtube</li>
-            <li>Category</li>
-            <li>Upgrade</li>
-            <li>FAQ</li>
-            <li><button>Login</button></li>
-          </ul>
-        </section>
+          </section>
 
-        <section class="main">
-          <div class="center-main">
-            <div class="first">
-              <h3>Free download sound effects without copyright</h3>
-              <p>
-                Download free copyright sound effect for your YouTube video and
-                any use.
-              </p>
+          <section class="main">
+            <div class="center-main">
+              <div class="first">
+                <h3>Free download sound effects without copyright</h3>
+                <p>
+                  Download free copyright sound effect for your YouTube video
+                  and any use.
+                </p>
+              </div>
+              <div class="second">
+                <img src="./Images/search-icon.svg" />
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Search sound effects"
+                />
+                <p>
+                  Try keyword: happy, funny, natural, horror, jumpscare and more
+                </p>
+              </div>
+              <div class="third">
+                <p>
+                  650.654 Available Sounds. Library Updated Weekly. See popular
+                  sounds
+                </p>
+              </div>
             </div>
-            <div class="second">
-              <img src="./Images/search-icon.svg" />
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="Search sound effects"
-              />
-              <p>
-                Try keyword: happy, funny, natural, horror, jumpscare and more
-              </p>
-            </div>
-            <div class="third">
-              <p>
-                650.654 Available Sounds. Library Updated Weekly. See popular
-                sounds
-              </p>
-            </div>
-          </div>
+          </section>
         </section>
       </section>
-    </section>
-    <section style="width: 100%; background: #fafafa">
-      <section class="topCompany">
-        <section class="company">
-          <div class="title">
-            <h6>Trusted by top Youtuber and Production House</h6>
-          </div>
-          <div class="logo">
-            <img src="./Images/dudeperfect 1.png" />
-            <img src="./Images/Pewdiepie-logo 1.png" />
-            <img src="./Images/MrBeast 1.png" />
-            <img src="./Images/wb-removebg-preview 1.png" />
-            <img src="./Images/netflix 1.png" />
-            <img src="./Images/pixar-removebg-preview 1.png" />
-            <img src="./Images/channels4_profile 1.png" />
-          </div>
+      <section style="width: 100%; background: #fafafa">
+        <section class="topCompany">
+          <section class="company">
+            <div class="title">
+              <h6>Trusted by top Youtuber and Production House</h6>
+            </div>
+            <div class="logo">
+              <img src="./Images/dudeperfect 1.png" />
+              <img src="./Images/Pewdiepie-logo 1.png" />
+              <img src="./Images/MrBeast 1.png" />
+              <img src="./Images/wb-removebg-preview 1.png" />
+              <img src="./Images/netflix 1.png" />
+              <img src="./Images/pixar-removebg-preview 1.png" />
+              <img src="./Images/channels4_profile 1.png" />
+            </div>
+          </section>
         </section>
       </section>
-    </section>
-    <section style="width: 100%">
-      <section class="topmusic">
-        <section class="music">
-          <div class="music-title">
-            <h4>Best sound effects for youtube videos</h4>
-          </div>
-          <div class="music-list">
-            <div class="music-menu">
-              <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Jumpscare</a></li>
-                <li><a href="#">Mellow</a></li>
-                <li><a href="#">Happiness</a></li>
-                <li class="display-none"><a href="#">Ambience</a></li>
-                <li class="display-none"><a href="#">Zonk</a></li>
-              </ul>
-              <button class="filter">
-                <span>Filter</span>
-                <img src="./Images/filter.svg" />
-              </button>
+      <section style="width: 100%">
+        <section class="topmusic">
+          <section class="music">
+            <div class="music-title">
+              <h4>Best sound effects for youtube videos</h4>
             </div>
-            <div class="music-table">
-              <div class="song">
-                <div class="music-name">
-                  <div>
-                    <img src="./Images/play.svg" />
-                  </div>
-                  <div class="soundName">
-                    <p>Sound name</p>
-                    <p>0:12</p>
-                  </div>
-                  <div class="description display-none">
-                    <p>Confused excited crowd slight panic and distress</p>
-                  </div>
-                  <div class="jumpscare">
-                    <p>Shocking, jumpscare</p>
-                  </div>
-                  <div class="icon">
-                    <img src="./Images/like.svg" />
-                    <img src="./Images/download.svg" />
-                    <img src="./Images/more.svg" />
+            <div class="music-list">
+              <div class="music-menu">
+                <ul>
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Jumpscare</a></li>
+                  <li><a href="#">Mellow</a></li>
+                  <li><a href="#">Happiness</a></li>
+                  <li class="display-none"><a href="#">Ambience</a></li>
+                  <li class="display-none"><a href="#">Zonk</a></li>
+                </ul>
+                <button class="filter">
+                  <span>Filter</span>
+                  <img src="./Images/filter.svg" />
+                </button>
+              </div>
+              <div class="music-table">
+                <div class="song">
+                  <div class="music-name">
+                    <div>
+                      <img src="./Images/play.svg" />
+                    </div>
+                    <div class="soundName">
+                      <p>Sound name</p>
+                      <p>0:12</p>
+                    </div>
+                    <div class="description display-none">
+                      <p>Confused excited crowd slight panic and distress</p>
+                    </div>
+                    <div class="jumpscare">
+                      <p>Shocking, jumpscare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./Images/like.svg" />
+                      <img src="./Images/download.svg" />
+                      <img src="./Images/more.svg" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="song">
-                <div class="music-name">
-                  <div>
-                    <img src="./Images/play.svg" />
-                  </div>
-                  <div class="soundName">
-                    <p>Sound name</p>
-                    <p>0:12</p>
-                  </div>
-                  <div class="description display-none">
-                    <p>Confused excited crowd slight panic and distress</p>
-                  </div>
-                  <div class="jumpscare">
-                    <p>Shocking, jumpscare</p>
-                  </div>
-                  <div class="icon">
-                    <img src="./Images/like.svg" />
-                    <img src="./Images/download.svg" />
-                    <img src="./Images/more.svg" />
-                  </div>
-                </div>
-              </div>
-              <div class="song">
-                <div class="music-name">
-                  <div>
-                    <img src="./Images/play.svg" />
-                  </div>
-                  <div class="soundName">
-                    <p>Sound name</p>
-                    <p>0:12</p>
-                  </div>
-                  <div class="description display-none">
-                    <p>Confused excited crowd slight panic and distress</p>
-                  </div>
-                  <div class="jumpscare">
-                    <p>Shocking, jumpscare</p>
-                  </div>
-                  <div class="icon">
-                    <img src="./Images/like.svg" />
-                    <img src="./Images/download.svg" />
-                    <img src="./Images/more.svg" />
+                <div class="song">
+                  <div class="music-name">
+                    <div>
+                      <img src="./Images/play.svg" />
+                    </div>
+                    <div class="soundName">
+                      <p>Sound name</p>
+                      <p>0:12</p>
+                    </div>
+                    <div class="description display-none">
+                      <p>Confused excited crowd slight panic and distress</p>
+                    </div>
+                    <div class="jumpscare">
+                      <p>Shocking, jumpscare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./Images/like.svg" />
+                      <img src="./Images/download.svg" />
+                      <img src="./Images/more.svg" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="song">
-                <div class="music-name">
-                  <div>
-                    <img src="./Images/play.svg" />
-                  </div>
-                  <div class="soundName">
-                    <p>Sound name</p>
-                    <p>0:12</p>
-                  </div>
-                  <div class="description display-none">
-                    <p>Confused excited crowd slight panic and distress</p>
-                  </div>
-                  <div class="jumpscare">
-                    <p>Shocking, jumpscare</p>
-                  </div>
-                  <div class="icon">
-                    <img src="./Images/like.svg" />
-                    <img src="./Images/download.svg" />
-                    <img src="./Images/more.svg" />
-                  </div>
-                </div>
-              </div>
-              <div class="song">
-                <div class="music-name">
-                  <div>
-                    <img src="./Images/play.svg" />
-                  </div>
-                  <div class="soundName">
-                    <p>Sound name</p>
-                    <p>0:12</p>
-                  </div>
-                  <div class="description display-none">
-                    <p>Confused excited crowd slight panic and distress</p>
-                  </div>
-                  <div class="jumpscare">
-                    <p>Shocking, jumpscare</p>
-                  </div>
-                  <div class="icon">
-                    <img src="./Images/like.svg" />
-                    <img src="./Images/download.svg" />
-                    <img src="./Images/more.svg" />
+                <div class="song">
+                  <div class="music-name">
+                    <div>
+                      <img src="./Images/play.svg" />
+                    </div>
+                    <div class="soundName">
+                      <p>Sound name</p>
+                      <p>0:12</p>
+                    </div>
+                    <div class="description display-none">
+                      <p>Confused excited crowd slight panic and distress</p>
+                    </div>
+                    <div class="jumpscare">
+                      <p>Shocking, jumpscare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./Images/like.svg" />
+                      <img src="./Images/download.svg" />
+                      <img src="./Images/more.svg" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="song">
-                <div class="music-name">
-                  <div>
-                    <img src="./Images/play.svg" />
+                <div class="song">
+                  <div class="music-name">
+                    <div>
+                      <img src="./Images/play.svg" />
+                    </div>
+                    <div class="soundName">
+                      <p>Sound name</p>
+                      <p>0:12</p>
+                    </div>
+                    <div class="description display-none">
+                      <p>Confused excited crowd slight panic and distress</p>
+                    </div>
+                    <div class="jumpscare">
+                      <p>Shocking, jumpscare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./Images/like.svg" />
+                      <img src="./Images/download.svg" />
+                      <img src="./Images/more.svg" />
+                    </div>
                   </div>
-                  <div class="soundName">
-                    <p>Sound name</p>
-                    <p>0:12</p>
+                </div>
+                <div class="song">
+                  <div class="music-name">
+                    <div>
+                      <img src="./Images/play.svg" />
+                    </div>
+                    <div class="soundName">
+                      <p>Sound name</p>
+                      <p>0:12</p>
+                    </div>
+                    <div class="description display-none">
+                      <p>Confused excited crowd slight panic and distress</p>
+                    </div>
+                    <div class="jumpscare">
+                      <p>Shocking, jumpscare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./Images/like.svg" />
+                      <img src="./Images/download.svg" />
+                      <img src="./Images/more.svg" />
+                    </div>
                   </div>
-                  <div class="description display-none">
-                    <p>Confused excited crowd slight panic and distress</p>
-                  </div>
-                  <div class="jumpscare">
-                    <p>Shocking, jumpscare</p>
-                  </div>
-                  <div class="icon">
-                    <img src="./Images/like.svg" />
-                    <img src="./Images/download.svg" />
-                    <img src="./Images/more.svg" />
+                </div>
+                <div class="song">
+                  <div class="music-name">
+                    <div>
+                      <img src="./Images/play.svg" />
+                    </div>
+                    <div class="soundName">
+                      <p>Sound name</p>
+                      <p>0:12</p>
+                    </div>
+                    <div class="description display-none">
+                      <p>Confused excited crowd slight panic and distress</p>
+                    </div>
+                    <div class="jumpscare">
+                      <p>Shocking, jumpscare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./Images/like.svg" />
+                      <img src="./Images/download.svg" />
+                      <img src="./Images/more.svg" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <a href="#" class="soundEffect">See all sound effects</a>
+            <a href="#" class="soundEffect">See all sound effects</a>
+          </section>
         </section>
       </section>
-    </section>
-    <section style="width: 100%">
-      <section class="topCategory">
-        <section class="category">
-          <h4>Browse by category</h4>
-          <div class="gallery">
-            <div class="first">
-              <p>Musical</p>
-            </div>
-            <div class="second">
-              <p>Industrial</p>
-            </div>
-            <div class="third">
-              <p>Movie sounds</p>
-            </div>
-            <div class="four">
-              <p>Animal</p>
-            </div>
-            <div class="five">
-              <p>People</p>
-            </div>
-            <div class="six">
-              <p>Vehicles</p>
-            </div>
-            <div class="seven">
-              <p>Sound designs</p>
-            </div>
-            <div class="eight">
-              <p>Emergency</p>
-            </div>
-            <div class="nine">
-              <p>Bell</p>
-            </div>
-            <div class="ten">
-              <p>Nature</p>
-            </div>
-            <div class="eleven">
-              <p>Cartoon</p>
-            </div>
-            <div class="twelve">
-              <p>Horror</p>
-            </div>
-          </div>
-          <a href="#">See all category</a>
-        </section>
-      </section>
-    </section>
-    <section style="width: 100%">
-      <section class="choose">
-        <section class="chooseus">
-          <div class="parent">
-            <div class="child1">
-              <p>WHY US?</p>
-              <h6>
-                We are provide the best quality sound effects without copyright.
-              </h6>
-            </div>
-            <div class="child2">
-              <div
-                style="display: flex; flex-direction: column; gap: 53px"
-                class="gap"
-              >
-                <div class="card">
-                  <div><img src="./Images/user.svg" /></div>
-                  <div class="card-footer">
-                    <p class="card-title">1.203.322 Customer satisfied</p>
-                    <p class="card-description">
-                      We've helped more than 1 million customers find best sound
-                      effects
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div><img src="./Images/royalty.svg" /></div>
-                  <div class="card-footer">
-                    <p class="card-title">Royalty-free</p>
-                    <p class="card-description">
-                      Just download and use the sound for your videos without
-                      royalty
-                    </p>
-                  </div>
-                </div>
+      <section style="width: 100%">
+        <section class="topCategory">
+          <section class="category">
+            <h4>Browse by category</h4>
+            <div class="gallery">
+              <div class="first">
+                <p>Musical</p>
               </div>
-              <div
-                style="display: flex; flex-direction: column; gap: 53px"
-                class="gap"
-              >
-                <div class="card" class="mt-5">
-                  <div><img src="./Images/sounds.svg" /></div>
-                  <div class="card-footer">
-                    <p class="card-title">650.654 Sounds</p>
-                    <p class="card-description">
-                      More than 600 thousand high quality to download. Still
-                      counting
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div><img src="./Images/king.svg" /></div>
-                  <div class="card-footer">
-                    <p class="card-title">Provide proper sounds</p>
-                    <p class="card-description">
-                      We just provide sounds with the best quality for customers
-                    </p>
-                  </div>
-                </div>
+              <div class="second">
+                <p>Industrial</p>
+              </div>
+              <div class="third">
+                <p>Movie sounds</p>
+              </div>
+              <div class="four">
+                <p>Animal</p>
+              </div>
+              <div class="five">
+                <p>People</p>
+              </div>
+              <div class="six">
+                <p>Vehicles</p>
+              </div>
+              <div class="seven">
+                <p>Sound designs</p>
+              </div>
+              <div class="eight">
+                <p>Emergency</p>
+              </div>
+              <div class="nine">
+                <p>Bell</p>
+              </div>
+              <div class="ten">
+                <p>Nature</p>
+              </div>
+              <div class="eleven">
+                <p>Cartoon</p>
+              </div>
+              <div class="twelve">
+                <p>Horror</p>
               </div>
             </div>
-          </div>
+            <a href="#">See all category</a>
+          </section>
         </section>
       </section>
-    </section>
-    <section style="width: 100%; background: #0432df">
-      <section class="topdownload">
-        <section class="download">
-          <div style="text-align: center" class="first">
-            <h3>Download sound effects for your project</h3>
-            <p style="width: auto">Find the right plan for you</p>
-          </div>
-          <div class="second">
-            <div class="basic">
+      <section style="width: 100%">
+        <section class="choose">
+          <section class="chooseus">
+            <div class="parent">
               <div class="child1">
-                <h4>Basic</h4>
-                <p>Download any royalty-free sound effects</p>
+                <p>WHY US?</p>
+                <h6>
+                  We are provide the best quality sound effects without
+                  copyright.
+                </h6>
               </div>
               <div class="child2">
-                <p>Free</p>
-                <div><button class="btn">Get started</button></div>
+                <div
+                  style="display: flex; flex-direction: column; gap: 53px"
+                  class="gap"
+                >
+                  <div class="card">
+                    <div><img src="./Images/user.svg" /></div>
+                    <div class="card-footer">
+                      <p class="card-title">1.203.322 Customer satisfied</p>
+                      <p class="card-description">
+                        We've helped more than 1 million customers find best
+                        sound effects
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div><img src="./Images/royalty.svg" /></div>
+                    <div class="card-footer">
+                      <p class="card-title">Royalty-free</p>
+                      <p class="card-description">
+                        Just download and use the sound for your videos without
+                        royalty
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="display: flex; flex-direction: column; gap: 53px"
+                  class="gap"
+                >
+                  <div class="card" class="mt-5">
+                    <div><img src="./Images/sounds.svg" /></div>
+                    <div class="card-footer">
+                      <p class="card-title">650.654 Sounds</p>
+                      <p class="card-description">
+                        More than 600 thousand high quality to download. Still
+                        counting
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div><img src="./Images/king.svg" /></div>
+                    <div class="card-footer">
+                      <p class="card-title">Provide proper sounds</p>
+                      <p class="card-description">
+                        We just provide sounds with the best quality for
+                        customers
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="basic">
+          </section>
+        </section>
+      </section>
+      <section style="width: 100%; background: #0432df">
+        <section class="topdownload">
+          <section class="download">
+            <div style="text-align: center" class="first">
+              <h3>Download sound effects for your project</h3>
+              <p style="width: auto">Find the right plan for you</p>
+            </div>
+            <div class="second">
+              <div class="basic">
+                <div class="child1">
+                  <h4>Basic</h4>
+                  <p>Download any royalty-free sound effects</p>
+                </div>
+                <div class="child2">
+                  <p>Free</p>
+                  <div><button class="btn">Get started</button></div>
+                </div>
+              </div>
+              <div class="basic">
+                <div class="child1">
+                  <h4>Premium</h4>
+                  <p>
+                    Download premium sound effects and use them for any business
+                    purpose
+                  </p>
+                </div>
+                <div class="child2 premium">
+                  <p>Start from $12/month</p>
+                  <div><button class="btn">Get started</button></div>
+                </div>
+              </div>
+            </div>
+            <p class="text">Join premium with 434,849 creators.</p>
+          </section>
+        </section>
+      </section>
+      <section style="width: 100%">
+        <section class="topTitle">
+          <section class="title">
+            <div class="first">
+              <p>TESTIMONIALS</p>
+              <h5>Hear good experiences from our customers</h5>
+            </div>
+            <div class="second">
+              <div class="firstCard" id="anne">
+                <div><img src="./Images/quotes.svg" /></div>
+                <div class="description">
+                  <p>
+                    The sounds from WavesCo is great and it really helps our
+                    team to save time and production costs.
+                  </p>
+                </div>
+                <div class="profile"><img src="./Images/user1.svg" /></div>
+                <div class="name">
+                  <p class="user">Anne Joyce</p>
+                  <p class="designation">Video editor at Dude Perfect</p>
+                </div>
+              </div>
+              <div class="firstCard" id="edward">
+                <div><img src="./Images/quotes.svg" /></div>
+                <div class="description">
+                  <p>
+                    WavesCo was a great choice for our team for film production,
+                    the quality is amazingly great.
+                  </p>
+                </div>
+                <div class="profile"><img src="./Images/user2.svg" /></div>
+                <div class="name">
+                  <p class="user">Edward Sann</p>
+                  <p class="designation">Head of Video editor at Netflix</p>
+                </div>
+              </div>
+              <div class="firstCard" id="ronn">
+                <div><img src="./Images/quotes.svg" /></div>
+                <div class="description">
+                  <p>
+                    Perfect way to get best quality sound effects for youtube
+                    videos. Thanks to WavesCo team.
+                  </p>
+                </div>
+                <div class="profile"><img src="./Images/user3.svg" /></div>
+                <div class="name">
+                  <p class="user">Ronn D.</p>
+                  <p class="designation">Video Editor at PewDiePie</p>
+                </div>
+              </div>
+            </div>
+            <div class="third">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section style="width: 100%; background-color: #020d37">
+        <section class="topfooter">
+          <section class="footer">
+            <div class="parent1">
               <div class="child1">
-                <h4>Premium</h4>
+                <img src="./Images/WavesCo.png" />
+              </div>
+              <div class="child2">
                 <p>
-                  Download premium sound effects and use them for any business
-                  purpose
+                  WavesCo is a platform for providing premium sound effects for
+                  Youtube videos, movies and many more.
                 </p>
               </div>
-              <div class="child2 premium">
-                <p>Start from $12/month</p>
-                <div><button class="btn">Get started</button></div>
+              <div class="child3">
+                <p>WavesCo ©2021, All rights reserved</p>
               </div>
             </div>
-          </div>
-          <p class="text">Join premium with 434,849 creators.</p>
+            <div class="parent2">
+              <ul class="list1">
+                <li>Product</li>
+                <li>Browse sounds</li>
+                <li>Pricing</li>
+                <li>FAQ</li>
+                <li>Affiliate</li>
+              </ul>
+              <ul class="list2">
+                <li>Company</li>
+                <li>Blog</li>
+                <li>About us</li>
+                <li>Help</li>
+                <li>Career</li>
+              </ul>
+              <ul class="list3">
+                <li>Social Media</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+          </section>
         </section>
       </section>
-    </section>
-    <section style="width: 100%">
-      <section class="topTitle">
-        <section class="title">
-          <div class="first">
-            <p>TESTIMONIALS</p>
-            <h5>Hear good experiences from our customers</h5>
-          </div>
-          <div class="second">
-            <div class="firstCard" id="anne">
-              <div><img src="./Images/quotes.svg" /></div>
-              <div class="description">
-                <p>
-                  The sounds from WavesCo is great and it really helps our team
-                  to save time and production costs.
-                </p>
-              </div>
-              <div class="profile"><img src="./Images/user1.svg" /></div>
-              <div class="name">
-                <p class="user">Anne Joyce</p>
-                <p class="designation">Video editor at Dude Perfect</p>
-              </div>
-            </div>
-            <div class="firstCard" id="edward">
-              <div><img src="./Images/quotes.svg" /></div>
-              <div class="description">
-                <p>
-                  WavesCo was a great choice for our team for film production,
-                  the quality is amazingly great.
-                </p>
-              </div>
-              <div class="profile"><img src="./Images/user2.svg" /></div>
-              <div class="name">
-                <p class="user">Edward Sann</p>
-                <p class="designation">Head of Video editor at Netflix</p>
-              </div>
-            </div>
-            <div class="firstCard" id="ronn">
-              <div><img src="./Images/quotes.svg" /></div>
-              <div class="description">
-                <p>
-                  Perfect way to get best quality sound effects for youtube
-                  videos. Thanks to WavesCo team.
-                </p>
-              </div>
-              <div class="profile"><img src="./Images/user3.svg" /></div>
-              <div class="name">
-                <p class="user">Ronn D.</p>
-                <p class="designation">Video Editor at PewDiePie</p>
-              </div>
-            </div>
-          </div>
-          <div class="third">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section style="width: 100%; background-color: #020d37">
-      <section class="topfooter">
-        <section class="footer">
-          <div class="parent1">
-            <div class="child1">
-              <img src="./Images/WavesCo.png" />
-            </div>
-            <div class="child2">
-              <p>
-                WavesCo is a platform for providing premium sound effects for
-                Youtube videos, movies and many more.
-              </p>
-            </div>
-            <div class="child3">
-              <p>WavesCo ©2021, All rights reserved</p>
-            </div>
-          </div>
-          <div class="parent2">
-            <ul class="list1">
-              <li>Product</li>
-              <li>Browse sounds</li>
-              <li>Pricing</li>
-              <li>FAQ</li>
-              <li>Affiliate</li>
-            </ul>
-            <ul class="list2">
-              <li>Company</li>
-              <li>Blog</li>
-              <li>About us</li>
-              <li>Help</li>
-              <li>Career</li>
-            </ul>
-            <ul class="list3">
-              <li>Social Media</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>YouTube</li>
-              <li>Facebook</li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </section>
+    </div>
     <script>
       const mobileMenu = document.getElementById("mobileMenu");
       const openMenu = () => {
@@ -512,6 +519,21 @@
           mobileMenu.classList.remove("hide");
         else mobileMenu.classList.add("hide");
       };
+      const number = document.querySelector(".number");
+      const preloader = document.querySelector(".preloader");
+      const bigContainer = document.getElementById("bigContainer");
+      let i = 0;
+      var c = setInterval(() => {
+        ++i;
+        number.innerHTML = i;
+        if (i == 100) {
+          clearInterval(c);
+          preloader.classList.add("hide");
+          window.scrollTo(0, 0);
+          bigContainer.classList.remove("hideDiv");
+          bigContainer.classList.add("show");
+        }
+      }, 60);
     </script>
   </body>
 </html>
