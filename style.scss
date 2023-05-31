@@ -700,6 +700,20 @@ ul
     margin : auto ;
     padding-top : 65px;
     padding-bottom: 69px;
+    .text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 189%;
+        color: #EEEEEE;
+        padding-top: 39px;
+        width: fit-content;
+        max-width : 1044px;
+        width : 100% ;
+        margin : auto;
+        text-align: center;
+    }
     .download{
         max-width : 1044px;
         width  : 100%;
@@ -709,16 +723,7 @@ ul
         align-items: center;
         flex-direction: column;
         gap : 43px ; 
-        .text{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 189%;
-            color: #EEEEEE;
-            padding-top: 39px;
-            width: fit-content;
-        }
+    
         .first
         {
             h3{

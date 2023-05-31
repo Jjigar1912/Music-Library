@@ -6,7 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-
 .preloader {
   position: fixed;
   top: 0;
@@ -633,17 +632,7 @@ body::-webkit-scrollbar {
   padding-top: 65px;
   padding-bottom: 69px;
 }
-.topdownload .download {
-  max-width: 1044px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 43px;
-}
-.topdownload .download .text {
+.topdownload .text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -653,6 +642,20 @@ body::-webkit-scrollbar {
   padding-top: 39px;
   width: -moz-fit-content;
   width: fit-content;
+  max-width: 1044px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.topdownload .download {
+  max-width: 1044px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 43px;
 }
 .topdownload .download .first h3 {
   font-family: "Poppins";
