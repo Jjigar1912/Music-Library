@@ -1663,6 +1663,11 @@ body::-webkit-scrollbar {
     gap: 30px !important;
   }
 }
+@media screen and (max-width: 330px) {
+  .topTitle .title .first {
+    padding-inline: 22px !important;
+  }
+}
 @media screen and (max-width: 320px) {
   .topCompany .company .logo {
     gap: 20px !important;

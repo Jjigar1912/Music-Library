@@ -2001,6 +2001,18 @@ ul
         }
     }
 }
+@media screen and (max-width : 330px) {
+    .topTitle
+    {
+        .title
+        {
+            .first
+            {
+                padding-inline: 22px !important;
+            }
+        }
+    }
+}
 @media screen and (max-width : 320px) {
     .topCompany
     {
