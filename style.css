@@ -412,6 +412,7 @@ body::-webkit-scrollbar {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
+  text-align: center;
 }
 .topCompany .company .logo {
   display: flex;
