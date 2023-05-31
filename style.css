@@ -740,8 +740,8 @@ body::-webkit-scrollbar {
 }
 .topdownload .download .second .basic .child2 button {
   background: #0432DF;
-  border: 1px solid #CDD6F9;
-  border-radius: 12px;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
