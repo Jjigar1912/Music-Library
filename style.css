@@ -544,6 +544,8 @@ body::-webkit-scrollbar {
   flex-direction: column;
   gap: 20px;
   text-align: center;
+  max-width: 510px;
+  margin: auto;
 }
 .topTitle .title .first p {
   font-family: "Poppins";
