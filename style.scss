@@ -449,11 +449,16 @@ ul
         gap: 35px;
         .title
         {
-            @include setPoppins(600,20px,30px);
             color : #020D37;
             
             h6{
                 letter-spacing: -2%;
+                font-family: "Poppins";
+    font-style: normal;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
             }
         }
         .logo
@@ -693,7 +698,8 @@ ul
 {
     max-width : 1244px ;
     margin : auto ;
-    padding: 60px 100px 100px;
+    padding-top : 65px;
+    padding-bottom: 69px;
     .download{
         max-width : 1044px;
         width  : 100%;
@@ -702,6 +708,7 @@ ul
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap : 43px ; 
         .text{
             font-family: 'Inter';
             font-style: normal;
@@ -732,7 +739,6 @@ ul
                 font-size: 18px;
                 line-height: 189%;
                 padding-top : 14px;
-                margin-bottom: 43px;
                 letter-spacing: -0.05em;
                 width: fit-content;
             }
