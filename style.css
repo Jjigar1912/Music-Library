@@ -92,6 +92,7 @@ body::-webkit-scrollbar {
   list-style-type: none !important;
 }
 .container .topHeader .header .navigation .navlist ul li {
+  text-align: center;
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
@@ -108,16 +109,18 @@ body::-webkit-scrollbar {
   opacity: 1;
   color: white;
 }
+.container .topHeader .header .navigation .navlist ul li:last-child {
+  opacity: 1 !important;
+}
 .container .topHeader .header .navigation .navlist ul li:last-child button {
   font-size: 14px;
-  background: #0432DF;
-  border: 1px solid #0432DF;
+  background: #0432DF !important;
+  border: 1px solid #0432DF !important;
   border-radius: 8px;
   padding: 10px 20px;
   color: #FFFFFF !important;
   width: -moz-fit-content;
   width: fit-content;
-  opacity: 1 !important;
   text-decoration: none;
   font-family: "Poppins";
   font-style: normal;
@@ -327,6 +330,7 @@ body::-webkit-scrollbar {
 .topmusic .music .music-title h4 {
   width: -moz-fit-content;
   width: fit-content;
+  font-weight: 600 !important;
 }
 .topmusic .music .music-menu {
   display: flex;
@@ -375,6 +379,7 @@ body::-webkit-scrollbar {
   font-size: 16px;
   line-height: 138%;
   display: flex;
+  color: #4C526A;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -464,15 +469,14 @@ body::-webkit-scrollbar {
 }
 .main .center-main .second img {
   position: absolute;
-  padding-top: 13px;
-  padding-left: 5px;
+  padding-top: 18.5px;
+  padding-left: 20px;
 }
-.main .center-main .second input[type=search] {
+.main .center-main .second .search {
   background: #EEEEEE;
   border-radius: 8px;
-  max-width: 600px;
-  padding: 10px 20px 10px 27px;
-  width: 100%;
+  padding: 16px 20px 15px 40px;
+  width: 600px;
   border: none;
   outline: none;
   font-family: "Inter";
@@ -1016,7 +1020,7 @@ body::-webkit-scrollbar {
 .choose .chooseus .parent {
   display: flex;
   flex-direction: row;
-  gap: 110px;
+  gap: 105px;
 }
 .choose .chooseus .parent .child1 {
   max-width: 337px;
@@ -1042,12 +1046,13 @@ body::-webkit-scrollbar {
   font-size: 28px;
   line-height: 45px;
   letter-spacing: -0.02em;
+  color: #020D37 !important;
 }
 .choose .chooseus .parent .child2 {
   display: flex;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
-  flex-wrap: wrap;
+  -moz-column-gap: 110px;
+       column-gap: 110px;
+  flex-wrap: nowrap;
   justify-content: space-around;
 }
 .choose .chooseus .parent .child2 .card {
@@ -1098,8 +1103,10 @@ body::-webkit-scrollbar {
   gap: 30px;
   width: -moz-fit-content;
   width: fit-content;
+  letter-spacing: -0.05em;
 }
 .topfooter .footer .parent1 .child1 {
+  letter-spacing: -0.05em;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1108,6 +1115,7 @@ body::-webkit-scrollbar {
   width: fit-content;
 }
 .topfooter .footer .parent1 .child2 p {
+  letter-spacing: -0.05em;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -1124,6 +1132,7 @@ body::-webkit-scrollbar {
   width: fit-content;
 }
 .topfooter .footer .parent1 .child3 p {
+  letter-spacing: -0.05em;
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Inter";
@@ -1149,6 +1158,7 @@ body::-webkit-scrollbar {
   gap: 12px;
 }
 .topfooter .footer .parent2 ul li:first-child {
+  letter-spacing: -0.05em;
   align-self: flex-start;
   width: -moz-fit-content;
   width: fit-content;
@@ -1160,6 +1170,7 @@ body::-webkit-scrollbar {
   color: #EEEEEE;
 }
 .topfooter .footer .parent2 ul li {
+  letter-spacing: -0.05em;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -1536,6 +1547,12 @@ body::-webkit-scrollbar {
     flex-direction: column !important;
   }
 }
+@media screen and (max-width: 640px) {
+  .search {
+    width: 500px !important;
+    max-width: 500px !important;
+  }
+}
 @media screen and (max-width: 601px) {
   .topmusic {
     padding: 50px 15px !important;
@@ -1548,7 +1565,13 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 526px) {
+  .search {
+    width: 400px !important;
+  }
   .display-none {
+    display: none !important;
+  }
+  .display-menu-none {
     display: none !important;
   }
 }
@@ -1558,6 +1581,16 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width: 450px) {
+  .img {
+    padding: 9.5px 10px 10.5px 14px !important;
+  }
+  .search {
+    width: 287px !important;
+    padding-top: 8px !important;
+    padding-bottom: 11px !important;
+    padding-right: 14px !important;
+    padding-left: 30px !important;
+  }
   .main {
     padding-top: 56px !important;
   }
